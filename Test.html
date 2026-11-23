@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eco-Friendly Wellness Tourism Campaign</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0; padding: 0;
+        background: #f4f9f4;
+        color: #2e4a2e;
+    }
+    header {
+        background: #6bbf59;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    section {
+        padding: 30px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 { margin-top: 0; }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Eco-Friendly Wellness Tourism Campaign</h1>
+    <p>Promoting sustainable travel for a healthier planet and healthier you.</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>About the Campaign</h2>
+        <p>Our mission is to encourage travelers to choose eco-friendly wellness destinations that support local communities, protect natural environments, and promote holistic well-being.</p>
+    </div>
+
+    <div class="card">
+        <h2>Survey Results</h2>
+        <p>We surveyed 500 travelers in the Philippines about their eco-friendly tourism preferences.</p>
+        <ul>
+            <li>72% prefer destinations with nature-based wellness activities</li>
+            <li>65% are willing to pay more for sustainable accommodations</li>
+            <li>81% believe eco-friendly tourism improves personal well-being</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Infographic: Traveler Preferences</h2>
+        <canvas id="surveyChart"></canvas>
+    </div>
+
+    <div class="card">
+        <h2>Infographic: Eco-Friendly Activities</h2>
+        <canvas id="activityChart"></canvas>
+    </div>
+</section>
+
+<script>
+// Survey Results Chart
+new Chart(document.getElementById("surveyChart"), {
+    type: "bar",
+    data: {
+        labels: ["Nature Wellness", "Sustainable Stays", "Eco Benefits"],
+        datasets: [{
+            label: "Percentage of Travelers",
+            data: [72, 65, 81],
+            backgroundColor: ["#6bbf59", "#4e9a46", "#2e4a2e"]
+        }]
+    }
+});
+
+// Eco-Friendly Activities Chart
+new Chart(document.getElementById("activityChart"), {
+    type: "pie",
+    data: {
+        labels: ["Forest Bathing", "Yoga Retreats", "Organic Food Tours", "Eco-Hiking"],
+        datasets: [{
+            data: [30, 25, 20, 25],
+            backgroundColor: ["#6bbf59", "#4e9a46", "#8cd47e", "#2e4a2e"]
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
